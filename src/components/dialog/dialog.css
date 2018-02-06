@@ -1,0 +1,90 @@
+.dialogBox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+.dialogBoxActive {
+    
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+
+.MaskBase {
+    width: 85%;
+    height: 3.8rem;
+    min-height: 1rem;
+    color: #000;
+    background: #fff;
+    border-radius: .01rem;
+    box-shadow: 0 0 5px #fff;
+    background: url('/src/static/image/4.jpg') 50% 50% no-repeat;
+    background-size: 106%;
+    z-index: 10;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.title {
+    width: 100%;
+    height: .7rem;
+    font-size: .2rem;
+    text-align: center;
+    position: relative;
+}
+.title span {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    opacity: 0;
+}
+.content {
+    width: 96%;
+    padding: 0 2%;    
+    font-size: .2rem;
+    line-height: .3rem;
+    margin-top: 1.1rem;
+}
+.Buttons {
+    width: 3.2rem;
+    height: .5rem;
+    line-height: .3rem;
+    text-align: center;
+    margin-top: .6rem;
+    position: absolute;
+    bottom: .25rem;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+.Button {
+    width: 40%;
+    height: 100%;
+    font-size: .16rem;
+    border-radius: .1rem;
+    color: #B10400;
+    border: none;
+    font-weight: bold;
+    background: #FED772;
+    margin: 0 2%;
+    opacity: 0;
+}

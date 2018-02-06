@@ -1,0 +1,43 @@
+.feel {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    flex-direction: column;
+    background: #F6514B;
+}
+.feel-content {
+    flex: 1;    
+    background: url('/src/static/image/save.jpg') 50% 50% no-repeat;
+    background-size: 100%;
+}
+.feel-sub-content {
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate3d(-50%, 0, 0);
+}
+.feel-sub-content i {
+    color: red;
+    margin-right: 0.05rem;
+}
+.feel-sub-title {
+    line-height: .2rem;
+    font-size: 0.17rem;
+    
+}
+.feel-choice>span {
+    padding: 0!important;
+}
+.feel-choice>span>span {
+    display: inline-block;
+    padding: 0.02rem 0.1rem;
+    margin: 0.1rem 0.04rem;
+    border: 1px solid #706F6A;
+    border-radius: .05rem;
+}
+.feel-choice>.clicked>span {
+    color: #fff;
+    background: #F6514B;
+    border: 1px solid #fff;
+}
